@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Macskák Világa & Az Én Cicám</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css"
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="fas fa-cat"></i> MacskaPortál</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#mycat">Az én macskám</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#breeds">Fajták</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#history">Történelem</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#famous">Híres macskák</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="mycat" class="hero-section">
+        <div class="container">
+            <h1 class="display-3 fw-bold">Ismerd meg [Macskád Neve]-t!</h1>
+            <p class="lead">A világ legaranyosabb és legrosszabbcsontabb cicája.</p>
+            <button class="btn btn-warning btn-lg mt-3" data-bs-toggle="modal" data-bs-target="#photoModal">Nézz meg róla egy fotót!</button>
+        </div>
+    </header>
+
+    <div class="container section-padding">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <img src="https://placekitten.com/600/400" alt="Az én macskám" class="img-fluid rounded shadow">
+            </div>
+            <div class="col-md-6">
+                <h2>Róla</h2>
+                <p>Itt írhatsz részletesen a saját macskádról. Mikor került hozzád, mit szeret enni, mi a kedvenc játéka.</p>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><strong>Név:</strong> Cirmi (vagy a te cicád neve)</li>
+                    <li class="list-group-item"><strong>Kor:</strong> 3 éves</li>
+                    <li class="list-group-item"><strong>Különleges képesség:</strong> 16 órát alszik egyhuzamban.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <hr class="container">
+
+    <section id="breeds" class="section-padding bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Népszerű Macskafajták</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://placekitten.com/401/300" class="card-img-top" alt="Maine Coon">
+                        <div class="card-body">
+                            <h5 class="card-title">Maine Coon</h5>
+                            <p class="card-text">A "szelíd óriás". Hatalmas termetű, barátságos és nagyon szőrös fajta.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://placekitten.com/402/300" class="card-img-top" alt="Sziámi">
+                        <div class="card-body">
+                            <h5 class="card-title">Sziámi</h5>
+                            <p class="card-text">Hangos, kommunikatív és rendkívül intelligens. Kék szeme és jellegzetes mintázata van.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://placekitten.com/403/300" class="card-img-top" alt="Perzsa">
+                        <div class="card-body">
+                            <h5 class="card-title">Perzsa</h5>
+                            <p class="card-text">A nyugalom szigete. Lapos orr, hosszú szőr és királyi méltóság jellemzi.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="history" class="section-padding">
+        <div class="container">
+            <h2 class="text-center mb-4">A Macskák Történelme (Idővonal)</h2>
+            <p class="text-center mb-4 text-muted">Használd a nyilakat vagy a lenti csíkokat az időutazáshoz!</p>
+            
+            <div id="historyCarousel" class="carousel slide timeline-carousel" data-bs-ride="false">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#historyCarousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#historyCarousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#historyCarousel" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#historyCarousel" data-bs-slide-to="3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="d-flex align-items-center justify-content-center h-100">
+                            <div class="text-center w-75">
+                                <i class="fas fa-paw fa-3x mb-3 text-warning"></i>
+                                <h3>I. e. 7500 - A kezdetek</h3>
+                                <p>A vadmacskák (Felis silvestris lybica) elkezdtek közeledni az emberi településekhez a Közel-Keleten, hogy rágcsálókra vadásszanak a magtárak körül.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex align-items-center justify-content-center h-100">
+                            <div class="text-center w-75">
+                                <i class="fas fa-pyramid fa-3x mb-3 text-warning"></i>
+                                <h3>Ókori Egyiptom</h3>
+                                <p>A macskákat istenként tisztelték (Basztet istennő). Szent állatok voltak, akiket gyakran mumifikáltak is gazdáik mellé.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex align-items-center justify-content-center h-100">
+                            <div class="text-center w-75">
+                                <i class="fab fa-fort-awesome fa-3x mb-3 text-warning"></i>
+                                <h3>Középkor</h3>
+                                <p>Sajnos Európában a boszorkánysággal hozták őket összefüggésbe. Ez a populáció csökkenéséhez, majd a pestist terjesztő patkányok elszaporodásához vezetett.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex align-items-center justify-content-center h-100">
+                            <div class="text-center w-75">
+                                <i class="fas fa-wifi fa-3x mb-3 text-warning"></i>
+                                <h3>Modern kor & Internet</h3>
+                                <p>A 19. századtól újra házi kedvencek. A 21. században pedig ők az internet vitathatatlan uralkodói (mémek, videók).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#historyCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Előző</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#historyCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Következő</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="famous" class="section-padding bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Híres Macskák a kultúrában</h2>
+            
+            <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="garfield-tab" data-bs-toggle="tab" data-bs-target="#garfield" type="button" role="tab">Garfield</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="schrodinger-tab" data-bs-toggle="tab" data-bs-target="#schrodinger" type="button" role="tab">Schrödinger macskája</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="grumpy-tab" data-bs-toggle="tab" data-bs-target="#grumpy" type="button" role="tab">Grumpy Cat</button>
+                </li>
+            </ul>
+
+            <div class="tab-content shadow-sm" id="myTabContent">
+                <div class="tab-pane fade show active" id="garfield" role="tabpanel">
+                    <div class="row mt-3">
+                        <div class="col-md-3 text-center">
+                            <i class="fas fa-hamburger fa-4x text-warning"></i>
+                        </div>
+                        <div class="col-md-9">
+                            <h4>Garfield</h4>
+                            <p>Jim Davis képregényhőse. Utálja a hétfőket, imádja a lasagnát, és az alvás a hobbija. Cinikus, lusta, de mégis mindenki kedvence.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="schrodinger" role="tabpanel">
+                    <div class="row mt-3">
+                        <div class="col-md-3 text-center">
+                            <i class="fas fa-box-open fa-4x text-primary"></i>
+                        </div>
+                        <div class="col-md-9">
+                            <h4>Schrödinger macskája</h4>
+                            <p>Erwin Schrödinger osztrák fizikus híres gondolatkísérlete a kvantummechanikából. A macska a dobozban egyszerre élő és holt, amíg meg nem figyeljük.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="grumpy" role="tabpanel">
+                    <div class="row mt-3">
+                        <div class="col-md-3 text-center">
+                            <i class="fas fa-frown fa-4x text-secondary"></i>
+                        </div>
+                        <div class="col-md-9">
+                            <h4>Grumpy Cat (Tardar Sauce)</h4>
+                            <p>Az internet egyik leghíresebb mémje volt. Jellegzetes, mogorva arckifejezését valójában egy genetikai rendellenesség okozta, egyébként kedves cica volt.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="photoModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Egy titkos fotó...</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="https://placekitten.com/400/300" class="img-fluid rounded" alt="Macska">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Bezárás</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 MacskaPortál - Minden jog fenntartva a macskák által.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
